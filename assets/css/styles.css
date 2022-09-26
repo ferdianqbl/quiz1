@@ -3,6 +3,24 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+h1.section-title {
+  background: linear-gradient(90deg, #12CAE5 0%, #AB4FC7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+p.content-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+p.content-text {
+  color: #959595;
+}
+
 .my-btn-primary {
   margin-top: 3.125rem;
   padding: 1rem 3.125rem;
@@ -103,4 +121,9 @@ section.home#home h1.home-title span {
 section.home#home p.home-text {
   color: #FFF;
   font-weight: 400;
+}
+
+section.hometown#hometown {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }/*# sourceMappingURL=styles.css.map */
