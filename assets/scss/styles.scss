@@ -22,6 +22,11 @@ p.content-text {
   color: #959595;
 }
 
+img.content-img {
+  border-radius: 20px;
+  box-shadow: 0px 5px 50px rgba(16, 0, 110, 0.4);
+}
+
 // BUTTON
 .my-btn-primary {
   margin-top: 3.125rem;
@@ -120,7 +125,7 @@ nav.navbar#my-navbar {
 
 // HOMEPAGE
 section.home#home {
-  padding-top: 5rem;
+  padding-top: 8rem;
   padding-bottom: 5rem;
   background: #00144C;
 
@@ -152,7 +157,12 @@ section.home#home {
 // PROFILE
 
 // HOMETOWN
-section.hometown#hometown {
+section.hometown-hero#hometown-hero {
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+}
+
+section.hometown-history#hometown-history {
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
