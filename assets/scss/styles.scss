@@ -5,11 +5,12 @@ body {
 }
 
 h1.section-title {
-  background: linear-gradient(90deg, #12CAE5 0%, #AB4FC7 100%);
+  background: linear-gradient(#12CAE5 0%, #AB4FC7 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 2.5rem;
   font-weight: 700;
+  margin-bottom: 5rem;
 }
 
 p.content-title {
@@ -25,6 +26,52 @@ p.content-text {
 img.content-img {
   border-radius: 20px;
   box-shadow: 0px 5px 50px rgba(16, 0, 110, 0.4);
+}
+
+.content-group {
+  margin-bottom: 5rem;
+}
+
+
+// CARD
+.section-card {
+  border: 1px solid transparent;
+  background: linear-gradient(234.24deg, #FFF, #FFF)padding-box,
+    linear-gradient(234.24deg, #C400FF 22.85%, #00DEFF 75.12%)border-box;
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  border-radius: 5px;
+  transition: all .5s;
+  position: relative;
+  padding: 1.875rem;
+  height: 100%;
+
+  &:hover {
+    background: linear-gradient(234.24deg, #FFF, #FFF)padding-box,
+      linear-gradient(234.24deg, #00DEFF 22.85%, #C400FF 75.12%)border-box;
+    transform: scale(1.05);
+    top: -2px;
+  }
+
+
+  .section-card-title {
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    margin-bottom: .625rem;
+  }
+
+  .section-card-text {
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #959595;
+  }
+
+  .section-card-img {
+    margin-top: 1.25rem;
+    margin-bottom: 2.5rem;
+  }
 }
 
 // BUTTON
@@ -163,6 +210,18 @@ section.hometown-hero#hometown-hero {
 }
 
 section.hometown-history#hometown-history {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+// FOOD
+section.food#food {
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+  background: #00144C;
+}
+
+section.other-food#other-food {
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
