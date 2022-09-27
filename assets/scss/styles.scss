@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -215,13 +216,92 @@ section.hometown-history#hometown-history {
 }
 
 // FOOD
-section.food#food {
+section.food#food,
+section.tourist#tourist {
   padding-top: 8rem;
   padding-bottom: 5rem;
   background: #00144C;
 }
 
-section.other-food#other-food {
+section.other-food#other-food,
+section.other-tourist#other-tourist {
   padding-top: 5rem;
   padding-bottom: 5rem;
+}
+
+// TOURIST
+
+// FOOTER
+footer#footer.footer {
+  background: #00144C;
+  border-top: 1px solid #4a008f;
+  padding-top: 3.125rem;
+  padding-bottom: 3.125rem;
+  color: #FFFFFF;
+
+  .footer-links {
+    margin-bottom: 3.125rem;
+
+    &>div {
+      margin-bottom: 1rem !important;
+    }
+
+    .footer-link {
+      cursor: ne-resize;
+      transition: .5s;
+      position: relative;
+
+      &:hover {
+        background: linear-gradient(90deg, #12CAE5 0%, #AB4FC7 100%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      &::after {
+        content: "";
+        background: linear-gradient(90deg, #AB4FC7 0%, #3E00C1 100%);
+        position: absolute;
+        width: 0%;
+        height: 0.225rem;
+        bottom: -.5rem;
+        left: 20%;
+        transition: .5s;
+        border-radius: 50px;
+        transition: .5s;
+      }
+
+      &:hover::after {
+        width: 60%;
+        transition: .4s;
+      }
+    }
+  }
+
+  .social-title {
+    font-weight: 500;
+    margin-bottom: 1.5625rem;
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
+  }
+
+  .social-link {
+    font-size: 2rem;
+    cursor: ne-resize;
+    color: #FFFFFF;
+    transition: .5s;
+
+    &:hover {
+      color: #8d5acf;
+    }
+  }
+
+  .footer-tag {
+    margin-top: 3.125rem;
+
+    @media (max-width: 400px) {
+      & {
+        font-size: .875rem;
+      }
+    }
+  }
 }
