@@ -167,6 +167,21 @@ section.home#home p.home-text {
   font-weight: 400;
 }
 
+section.profile#profile {
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+}
+section.profile#profile h1.profile-heading {
+  font-size: 2.5rem;
+  line-height: 3.75rem;
+}
+section.profile#profile h1.profile-heading span {
+  background: linear-gradient(90deg, #12CAE5 0%, #AB4FC7 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 section.hometown-hero#hometown-hero {
   padding-top: 8rem;
   padding-bottom: 5rem;
