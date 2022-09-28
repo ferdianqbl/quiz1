@@ -48,6 +48,19 @@ img.content-img {
   transform: scale(1.05);
   top: -2px;
 }
+.section-card:hover .section-card-link {
+  background: linear-gradient(90deg, #12CAE5 0%, #AB4FC7 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.section-card:hover .section-card-link .portfolio-card-link-icon {
+  color: #AB4FC7;
+}
+.section-card:hover .section-card-link::after {
+  width: 60%;
+  transition: 0.4s;
+}
 .section-card .section-card-title {
   font-weight: 500;
   font-size: 1.5rem;
@@ -63,6 +76,49 @@ img.content-img {
 .section-card .section-card-img {
   margin-top: 1.25rem;
   margin-bottom: 2.5rem;
+}
+.section-card .section-card-link {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: 500;
+  transition: 0.5s;
+  position: relative;
+}
+.section-card .section-card-link:hover {
+  background: linear-gradient(90deg, #12CAE5 0%, #AB4FC7 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.section-card .section-card-link:hover .portfolio-card-link-icon {
+  color: #AB4FC7;
+}
+.section-card .section-card-link::after {
+  content: "";
+  background: linear-gradient(90deg, #AB4FC7 0%, #3E00C1 100%);
+  position: absolute;
+  width: 0%;
+  height: 0.225rem;
+  bottom: -0.65rem;
+  left: 0%;
+  transition: 0.5s;
+  border-radius: 50px;
+  transition: 0.5s;
+}
+.section-card .section-card-link:hover::after {
+  width: 60%;
+  transition: 0.4s;
+}
+
+.section-card-bg-blue {
+  background: linear-gradient(234.24deg, #00144C, #00144C) padding-box, linear-gradient(234.24deg, #C400FF 22.85%, #00DEFF 75.12%) border-box;
+  color: #FFF;
+}
+.section-card-bg-blue:hover {
+  background: linear-gradient(234.24deg, #00144C, #00144C) padding-box, linear-gradient(234.24deg, #00DEFF 22.85%, #C400FF 75.12%) border-box;
+}
+.section-card-bg-blue p.section-card-text {
+  color: #FFF;
 }
 
 .my-btn-primary {
@@ -204,6 +260,12 @@ section.profile#profile .profile-card-project {
   section.profile#profile .profile-card-project {
     width: 100%;
   }
+}
+
+section.project#project {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background: #00144C;
 }
 
 section.hometown-hero#hometown-hero {

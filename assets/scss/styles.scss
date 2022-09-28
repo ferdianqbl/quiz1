@@ -52,6 +52,21 @@ img.content-img {
       linear-gradient(234.24deg, #00DEFF 22.85%, #C400FF 75.12%)border-box;
     transform: scale(1.05);
     top: -2px;
+
+    .section-card-link {
+      background: linear-gradient(90deg, #12CAE5 0%, #AB4FC7 100%);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      .portfolio-card-link-icon {
+        color: #AB4FC7;
+      }
+
+      &::after {
+        width: 60%;
+        transition: .4s;
+      }
+    }
   }
 
 
@@ -72,6 +87,59 @@ img.content-img {
   .section-card-img {
     margin-top: 1.25rem;
     margin-bottom: 2.5rem;
+  }
+
+  .section-card-link {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 500;
+    transition: .5s;
+    position: relative;
+
+    &:hover {
+      background: linear-gradient(90deg, #12CAE5 0%, #AB4FC7 100%);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      .portfolio-card-link-icon {
+        color: #AB4FC7;
+      }
+    }
+
+    &::after {
+      content: "";
+      background: linear-gradient(90deg, #AB4FC7 0%, #3E00C1 100%);
+      position: absolute;
+      width: 0%;
+      height: 0.225rem;
+      bottom: -.65rem;
+      left: 0%;
+      transition: .5s;
+      border-radius: 50px;
+      transition: .5s;
+    }
+
+    &:hover::after {
+      width: 60%;
+      transition: .4s;
+    }
+
+
+  }
+}
+
+.section-card-bg-blue {
+  background: linear-gradient(234.24deg, #00144C, #00144C)padding-box,
+    linear-gradient(234.24deg, #C400FF 22.85%, #00DEFF 75.12%)border-box;
+  color: #FFF;
+
+  &:hover {
+    background: linear-gradient(234.24deg, #00144C, #00144C)padding-box,
+      linear-gradient(234.24deg, #00DEFF 22.85%, #C400FF 75.12%)border-box;
+  }
+
+  p.section-card-text {
+    color: #FFF;
   }
 }
 
@@ -246,6 +314,12 @@ section.profile#profile {
       }
     }
   }
+}
+
+section.project#project {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background: #00144C;
 }
 
 // HOMETOWN
