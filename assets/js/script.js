@@ -19,9 +19,6 @@ AOS.init({
   once: true,
 });
 
-
-
-
 // navbar scroll animation
 const navbar = document.getElementById("my-navbar");
 const navbarBrand = document.querySelector(".navbar-brand");
