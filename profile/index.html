@@ -8,6 +8,7 @@
   <title>Quiz 1 | Hometown</title>
 
   <link rel="stylesheet" href="../assets/css/bootstrap.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
 
@@ -19,7 +20,11 @@
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <div class="navbar-toggler--nav">
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+        </div>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-center align-items-center">
@@ -46,12 +51,12 @@
   <!-- PROFILE PAGE -->
   <section class="profile" id="profile">
     <div class="container">
-      <h1 class="section-title">
+      <h1 class="section-title" data-aos="zoom-in">
         Who Am I ?
       </h1>
 
       <div class="mt-5 row justify-content-center align-items-center flex-column-reverse flex-md-row">
-        <div class="col-lg-5 col-md-6">
+        <div class="col-lg-5 col-md-6" data-aos="fade-down">
           <!-- card1 -->
           <div class="row align-items-center mb-3">
             <div class="col-1 me-3">
@@ -83,7 +88,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-5 col-md-6 mb-5 mb-md-0">
+        <div class="col-lg-5 col-md-6 mb-5 mb-md-0" data-aos="zoom-in-up">
           <h1 class="profile-heading">
             Turning Ideas Into
             <br />
@@ -98,7 +103,7 @@
       </div>
 
       <div class="mt-5 row justify-content-center align-items-center">
-        <div class="col-lg-5 col-md-6 mb-5 mb-md-0">
+        <div class="col-lg-5 col-md-6 mb-5 mb-md-0" data-aos="zoom-in">
           <h1 class="profile-heading">
             I'm an
             <br />
@@ -110,7 +115,7 @@
             .
           </h1>
         </div>
-        <div class="col-lg-5 col-md-6">
+        <div class="col-lg-5 col-md-6" data-aos="fade-down">
           <div class="row justify-content-center align-items-center profile-card-project">
             <div class="col-3 p-0 me-3">
               <img src="../assets/images/website.png" alt="" class="img-fluid">
@@ -150,7 +155,7 @@
       </h1>
 
       <div class="row align-items-center row-cols-1 row-cols-md-2 g-5 g-md-4">
-        <div class="col-md-6">
+        <div class="col-md-6" data-aos="fade-down">
           <div class="section-card h-100 section-card-bg-blue">
             <h4 class="section-card-title">Viralin Website</h4>
             <p class="section-card-text">Viralin is a job seeker site built using Bootstrap, PHP, and MySQL. This
@@ -161,7 +166,7 @@
                 class="bi bi-chevron-right"></i></a>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6" data-aos="fade-down" data-aos-duration="900">
           <div class="section-card h-100 section-card-bg-blue">
             <h4 class="section-card-title">Helaveria Website</h4>
             <p class="section-card-text">Helaveria is an organization website created to help introduce your
@@ -172,7 +177,7 @@
                 class="bi bi-chevron-right"></i></a>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6" data-aos="fade-down" data-aos-duration="1200">
           <div class="section-card h-100 section-card-bg-blue">
             <h4 class="section-card-title">BookShelf App</h4>
             <p class="section-card-text">BookShelf App is a simple website application that I developed to assigned the
@@ -183,7 +188,7 @@
                 class="bi bi-chevron-right"></i></a>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6" data-aos="fade-down" data-aos-duration="1500">
           <div class="section-card h-100 section-card-bg-blue">
             <h4 class="section-card-title">Sambilanesia Website</h4>
             <p class="section-card-text">Sambilanesia is a website that I developed using CSS Native and Vanilla
@@ -239,28 +244,28 @@
 
       <div class="row justify-content-center align-items-center text-center">
         <p class="social-title pb-0">Reach Me Out</p>
-        <div class="col-sm-1 col p-0 m-0">
+        <div class="col-sm-1 col p-0 m-0" data-aos="zoom-in">
           <a href="https://www.instagram.com/ferdianqbl/" class="social-link" target="_blank" rel="noopener noreferrer">
             <i class="bi bi-instagram"></i>
           </a>
         </div>
-        <div class="col-sm-1 col p-0 m-0">
+        <div class="col-sm-1 col p-0 m-0" data-aos="zoom-in" data-aos-duration="900">
           <a href="https://github.com/ferdianqbl" class="social-link" target="_blank" rel="noopener noreferrer">
             <i class="bi bi-github"></i>
           </a>
         </div>
-        <div class="col-sm-1 col p-0 m-0">
+        <div class="col-sm-1 col p-0 m-0" data-aos="zoom-in" data-aos-duration="1200">
           <a href="https://www.linkedin.com/in/muhammad-ferdian-iqbal-21b2371b8/" class="social-link" target="_blank"
             rel="noopener noreferrer">
             <i class="bi bi-linkedin"></i>
           </a>
         </div>
-        <div class="col-sm-1 col p-0 m-0">
+        <div class="col-sm-1 col p-0 m-0" data-aos="zoom-in" data-aos-duration="1600">
           <a href="https://twitter.com/ferdianqbl" class="social-link" target="_blank" rel="noopener noreferrer">
             <i class="bi bi-twitter"></i>
           </a>
         </div>
-        <div class="col-sm-1 col p-0 m-0">
+        <div class="col-sm-1 col p-0 m-0" data-aos="zoom-in" data-aos-duration="2000">
           <a href="mailto:muhammadferdianiqbal@gmail.com" class="social-link">
             <i class="bi bi-envelope-fill"></i>
           </a>

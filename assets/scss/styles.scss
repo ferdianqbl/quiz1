@@ -157,7 +157,7 @@ img.content-img {
   font-weight: 500;
   font-size: 1.125rem;
   -webkit-transition: .5s;
-  transition: .5s;
+  transition: all .5s;
   border: none;
 
   &:hover {
@@ -183,7 +183,7 @@ img.content-img {
   text-decoration: none;
   font-size: 1.125rem;
   -webkit-transition: .5s;
-  transition: .5s;
+  transition: all .5s;
   border: 1px solid #3E00C1;
   border-radius: 5px;
 
@@ -196,6 +196,12 @@ img.content-img {
 nav.navbar#my-navbar {
   background: #00144C;
   border-bottom: #002daa 1px solid;
+  transition: all .5s;
+
+  a.navbar-brand {
+
+    transition: all .5s;
+  }
 
   .container {
 
@@ -237,6 +243,46 @@ nav.navbar#my-navbar {
       }
     }
   }
+}
+
+/* BURGER */
+.navbar-toggler--nav,
+.navbar-toggler-icon {
+  transition: all 0.5s ease-in-out;
+}
+
+.navbar-toggler-icon {
+  display: block;
+  border-radius: 9999px;
+  background-color: rgb(255, 255, 255);
+  width: 28px;
+  height: 2px;
+}
+
+.navbar-toggler-icon:not(:last-child) {
+  margin-bottom: 7px;
+}
+
+.navbar-toggler--nav.toggler-active {
+  transition-delay: 0.8s;
+  transform: rotate(45deg);
+}
+
+.navbar-toggler--nav.toggler-active>span:nth-child(2) {
+  width: 0;
+}
+
+.navbar-toggler--nav.toggler-active>span:nth-child(1),
+.navbar-toggler--nav.toggler-active>span:nth-child(3) {
+  transition-delay: 0.5s;
+}
+
+.navbar-toggler--nav.toggler-active>span:nth-child(1) {
+  transform: translateY(9px);
+}
+
+.navbar-toggler--nav.toggler-active>span:nth-child(3) {
+  transform: translateY(-9px) rotate(90deg);
 }
 
 // HOMEPAGE

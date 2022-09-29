@@ -8,6 +8,7 @@
   <title>Quiz 1 | Tourist</title>
 
   <link rel="stylesheet" href="../assets/css/bootstrap.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
 
@@ -19,7 +20,11 @@
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <div class="navbar-toggler--nav">
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+        </div>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-center align-items-center">
@@ -46,7 +51,7 @@
   <!-- TOURIST PAGE -->
   <section class="tourist" id="tourist">
     <div class="container">
-      <h1 class="section-title">
+      <h1 class="section-title" data-aos="zoom-in">
         What places can you visit ?
       </h1>
       <div class="mt-5 row justify-content-center align-items-center content-group">
